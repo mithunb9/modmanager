@@ -14,9 +14,9 @@ export default function Home() {
       )}
       {session && (
         <>
-          Signed in as {session.user.name} <br />
+          Signed in as {session?.user?.name} <br />
           <Image
-            src={session.user.image}
+            src={session?.user?.image as string}
             alt="Profile Picture"
             width={500}
             height={500}
